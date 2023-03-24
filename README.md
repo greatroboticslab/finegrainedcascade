@@ -19,14 +19,11 @@ This is a PyTorch-based deep learning model for classifying laser images as eith
 
 ### Some Important Code Files
 
-1. `test.py`
-   This is the main Python script that contains the model architecture and training/evaluation pipelines. It imports the dataset classes from the other two files and uses them to evaluate the model.
-
-2. `laser_data_cropped_day.py`
-   This file contains the `LaserDayDataset` class, which is a PyTorch Dataset subclass used for loading and preprocessing the laser images for the daytime dataset. It defines the `load_annotations` function that reads the image filenames and corresponding labels from a text file and creates a list of data information dictionaries.
-
-3. `laser_dataset.py`
-   This file contains the `LaserDataset` class, which is a PyTorch Dataset subclass used for loading and preprocessing the laser images for the binary classification dataset. It defines the `load_annotations` function that reads the image filenames and corresponding labels from a text file and creates a list of data information dictionaries.
+1. `mmdetection-master_release/test.py`
+   This is a script for testing (and evaluating) a model using the MMDetection library. The script begins by importing necessary packages such as argparse, os, pickle, time, warnings, and others. It then defines a function named parse_args that parses command-line arguments using argparse. The function returns the parsed arguments. The main function calls the parse_args function to get the parsed arguments. It checks that at least one operation is specified (save/eval/format/show the results/save the results) using the argument "--out", "--eval", "--format-only", "--show", or "--show-dir". The function then loads the configuration file specified in the command-line arguments using Config.fromfile from the MMDetection library. It merges any dictionary provided in the argument "--cfg-options" to the configuration. If cudnn_benchmark is set to True in the configuration, torch.backends.cudnn.benchmark is set to True. Finally, the function runs either a single_gpu_test or a multi_gpu_test function depending on the number of GPUs available. If --fuse-conv-bn is set, it applies fuse_conv_bn to the model. The output results are saved in pickle format if --out is specified. If --eval is specified, the evaluation is performed using the specified evaluation metrics. If --format-only is specified, the output results are formatted without performing evaluation. If --show is specified, the output results are shown. If --show-dir is specified, the painted images will be saved in the specified directory.
+   
+2. `mmdetection-master_release/configs/laser`
+   This folder contains the implementation of datasets and some other import configurations.
 
 ### Dataset
 
