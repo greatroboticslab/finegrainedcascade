@@ -232,7 +232,7 @@ def main(fname2cls_file=None, det_weight=0):
                         img_filename)
                     plt.imsave(crop_save_dst, cropped_img)
         #'''
-        #'''
+        '''
         #with open('/home/mtsu/workspace/zjx/LCA-CNN-master/fname2cls20230128.pkl', 'rb') as f:
         with open(fname2cls_file, 'rb') as f:
                 fname2cls = pickle.load(f)
@@ -285,8 +285,8 @@ def main(fname2cls_file=None, det_weight=0):
 
 
 if __name__ == '__main__':
-    #main();exit(0)
-    #'''
+    main();exit(0)
+    '''
     model_foler = '/data/laser_detection/work_dirs/LCA_CNN/all_crop_box_by_name_112_0/'
     models = os.listdir(model_foler)
     for m in models:
