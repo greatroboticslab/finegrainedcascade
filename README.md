@@ -1,19 +1,21 @@
-## Visualizing Bounding Boxes and Predictions
+# Instructions
+
+## (1) Visualizing Bounding Boxes and Predictions
 
 The ground-truth bounding boxes and predictive bounding boxes should be visualized, including their locations, categories, Intersection over Union (IoU) scores, and probabilities. An example image with locations and IoUs is shown below. In our specific task, category and probability information should also be included, which is not present in the example image:
 
 ![example_file](example_file.png)
 
 
-## Analysing Classification Errors
+## (2) Analysing Classification Errors
 
 To analyze classification errors, various tools can be utilized. For example, a confusion matrix can be employed to determine whether misclassifications primarily occur between specific classes, such as day1 and day3.
 
-## Distribution of Categorical Predictions
+## (3) Distribution of Categorical Predictions
 
 The distribution of categorical predictions should be also analyzed. For instance, given that the ground truth label is day3-(0, 0, 1, 0, 0), the incorrect predictions should be examined to determine whether they are evenly distributed-(0.25, 0.2, 0.15, 0.2, 0.2) or highly centralized-(0.9, 0, 0.1, 0, 0, 0).
 
-## Laser Localization Model
+## (4) Information of Laser Localization Model
 
 This is a PyTorch-based deep learning model for classifying laser images as either green or red based on the color of the laser. The model takes in laser images and predicts the corresponding label.
 
@@ -40,7 +42,7 @@ The model is trained on the binary classification dataset and evaluated on the v
 
 The model is evaluated using the accuracy metric on the validation set of the daytime dataset. The evaluation pipeline includes loading the images from file, preprocessing, normalization, and converting to PyTorch tensors. The accuracy metric is used to evaluate the performance of the model.
 
-## Laser Classification Model
+## (5) Information of Laser Classification Model
 
 Based on TensorFlow ... TBD
 
