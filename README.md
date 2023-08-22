@@ -44,5 +44,8 @@ The model is evaluated using the accuracy metric on the validation set of the da
 
 ## (5) Information of Laser Classification Model
 
-Based on TensorFlow ... TBD
+Based on TensorFlow, see LCA-CNN/README.md for more details:
+
+step1. prepare the laser data using `laser_rotate.py`
+step2. run `laser_train.py` for training.
 

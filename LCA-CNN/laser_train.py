@@ -49,9 +49,9 @@ save_weight_path = 'fullmodel_inception_v3_weight.h5'
 # dimensions of our images.
 img_width, img_height = 448, 448
 
-train_data_dir = '/data/laser_detection/work_dirs/RED_cascade_rcnn_r50_fpn_20e_coco/all_crop_box_by_name_train_rotate_112/' #'/data/laser_detection/work_dirs/RED_cascade_rcnn_r50_fpn_20e_coco/data_split/train_new_rotate/'
+train_data_dir = 'your_roteted_training_data' #'/data/laser_detection/work_dirs/RED_cascade_rcnn_r50_fpn_20e_coco/data_split/train_new_rotate/'
 # train_data_dir = 'train'
-test_data_dir = '/data/laser_detection/work_dirs/RED_cascade_rcnn_r50_fpn_20e_coco/all_crop_box_by_name_112/' #'/data/laser_detection/work_dirs/RED_cascade_rcnn_r50_fpn_20e_coco/data_split/val_new/'
+test_data_dir = 'your_testing_data' #'/data/laser_detection/work_dirs/RED_cascade_rcnn_r50_fpn_20e_coco/data_split/val_new/'
 
 epochs = 100
 epochs_pre = 10
@@ -273,10 +273,10 @@ def extract(model_path):
 
 
 if __name__ == '__main__':
-    #train_gatp_two_stream()
+    train_gatp_two_stream()
     #val()
-    model_foler = '/data/laser_detection/work_dirs/LCA_CNN/all_crop_box_by_name_112_0/'
-    models = os.listdir(model_foler)
-    for m in models:
-        if m.endswith('.hdf5'):# and '095' in m:
-            extract(model_foler + m)
+    #model_foler = '/data/laser_detection/work_dirs/LCA_CNN/all_crop_box_by_name_112_0/'
+    #models = os.listdir(model_foler)
+    #for m in models:
+    #    if m.endswith('.hdf5'):# and '095' in m:
+    #        extract(model_foler + m)
