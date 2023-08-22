@@ -47,5 +47,6 @@ The model is evaluated using the accuracy metric on the validation set of the da
 Based on TensorFlow, see LCA-CNN/README.md for more details:
 
 step1. prepare the laser data using `laser_rotate.py`
-step2. run `laser_train.py` for training.
+
+step2. run `laser_train.py` for training (& testing).
 
