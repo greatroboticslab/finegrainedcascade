@@ -1,5 +1,7 @@
 # LCA-CNN
 
+### Please see https://github.com/greatroboticslab/finegrainedcascade/blob/main/LCA-CNN/README.md#using-our-customized-laser-dataset for its customization for our laser data.
+
 Code for paper "Learning Cascade Attention for Fine-grained Image Classification", which currently 
 under review at Elsevier Journal of Neural Networks(NN).
 
