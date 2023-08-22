@@ -36,6 +36,14 @@ unzip weights111.zip
 
 ------
 
+### Using our customized laser dataset:
+
+step1. prepare the laser data using laser_rotate.py
+
+step2. run laser_train.py for training.
+
+step3. comment train_gatp_two_stream() & uncomment val() in the main function of  laser_train.py for inference.
+
 
 
 
