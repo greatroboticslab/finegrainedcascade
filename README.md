@@ -42,11 +42,13 @@ The model is trained on the binary classification dataset and evaluated on the v
 
 The model is evaluated using the accuracy metric on the validation set of the daytime dataset. The evaluation pipeline includes loading the images from file, preprocessing, normalization, and converting to PyTorch tensors. The accuracy metric is used to evaluate the performance of the model.
 
-## (5) Information of Laser Classification Model
+## (5) Information on Laser Classification Model
 
 Based on TensorFlow, see LCA-CNN/README.md for more details:
 
-step1. prepare the laser data using `laser_rotate.py`
+step1. prepare the laser data using laser_rotate.py
 
-step2. run `laser_train.py` for training (& testing).
+step2. run laser_train.py for training.
+
+step3. comment train_gatp_two_stream() & uncomment val() in the main function of laser_train.py for inference.
 
