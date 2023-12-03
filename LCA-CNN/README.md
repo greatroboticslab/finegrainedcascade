@@ -1,6 +1,17 @@
 # LCA-CNN
 
+
 ### Please see https://github.com/greatroboticslab/finegrainedcascade/blob/main/LCA-CNN/README.md#using-our-customized-laser-dataset for its customization for our laser data.
+
+
+The paper inspired by
+
+Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction
+without Convolutions
+
+https://arxiv.org/abs/2102.12122
+
+<img width="641" alt="image" src="https://github.com/greatroboticslab/finegrainedcascade/assets/205781/14fde0b4-cc89-4d0f-a417-d502ba5b834b">
 
 Code for paper "Learning Cascade Attention for Fine-grained Image Classification", which currently 
 under review at Elsevier Journal of Neural Networks(NN).
