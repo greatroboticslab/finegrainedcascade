@@ -45,6 +45,10 @@ zip -s- weights1.zip -O weights111.zip
 unzip weights111.zip
 ```
 
+
+Conda ENV
+Lca_cnn
+
 ## Dependencies:
 + Python (3.6)
 + Keras (2.1.5)
