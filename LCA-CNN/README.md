@@ -37,7 +37,9 @@ The iNaturalist pre-train parameters (converted from [Link](https://github.com/r
 Trained model for CUB-200-2011 dataset. (for reproduction).  
 To unzip file:
 ```
-[https://github.com/billzyx/LCA-CNN/blob/master/weights1.z01](https://github.com/billzyx/LCA-CNN/blob/master/weights1.z01)
+
+ weights1.zip can be found here:
+https://github.com/billzyx/LCA-CNN/blob/master/weights1.z01
 
 zip -s- weights1.zip -O weights111.zip
 unzip weights111.zip
